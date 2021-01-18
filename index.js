@@ -153,7 +153,7 @@ const obj5 = {
 };
 
 let array = [obj1, obj2, obj3, obj4, obj5];
-let counter = 0;
+
 
 let biggestKeyCount = 0;
 let biggestObject = {};
@@ -161,7 +161,7 @@ let biggestObject = {};
 
 
 for (let object of array) { //! take the first object of the array
-    counter = 0;
+    let counter = 0;
     for (let props in object) { //! take the first key of the object
 
         if (object.hasOwnProperty(props)) { //! if there is a key, conter +1
